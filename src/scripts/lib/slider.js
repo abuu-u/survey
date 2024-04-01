@@ -223,6 +223,7 @@ export const setupSlider = ({
   for (const [index, item] of items.entries()) {
     if ('current' in item.dataset) {
       const pos = getCenterPosition(item)
+      setCurrentItem(item)
       setTrackPosition(pos, false)
     }
 
