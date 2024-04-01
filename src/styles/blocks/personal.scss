@@ -1,0 +1,15 @@
+.personal {
+  display: grid;
+
+  gap: 17.5px;
+
+  width: 100%;
+
+  &__label {
+    width: 100%;
+  }
+
+  &__input {
+    flex: 1 0;
+  }
+}

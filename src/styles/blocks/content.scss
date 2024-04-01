@@ -1,0 +1,11 @@
+.content {
+  padding: 60px 100px 174px;
+
+  @include tablet-only {
+    padding: 60px 20px;
+  }
+
+  @include mobile-only {
+    padding: 60px 10px;
+  }
+}

@@ -1,0 +1,23 @@
+.logo {
+  display: grid;
+
+  margin-bottom: 60px;
+
+  font-family: Arkhip, sans-serif;
+
+  &__brand {
+    font-size: 25px;
+    line-height: 1.2;
+
+    background: url('../../images/bg-pattern.jpg');
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__description {
+    font-size: 10px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+}

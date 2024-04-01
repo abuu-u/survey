@@ -1,0 +1,56 @@
+// gilroy
+@font-face {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local('Gilroy-SemiBold'),
+    url('/fonts/gilroy/600.woff2') format('woff2'),
+    url('/fonts/gilroy/600.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local('Gilroy-Light'),
+    url('/fonts/gilroy/300.woff2') format('woff2'),
+    url('/fonts/gilroy/300.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local('Gilroy-Medium'),
+    url('/fonts/gilroy/500.woff2') format('woff2'),
+    url('/fonts/gilroy/500.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Gilroy-Regular'),
+    url('/fonts/gilroy/400.woff2') format('woff2'),
+    url('/fonts/gilroy/400.woff') format('woff');
+  font-display: swap;
+}
+
+// arkhip
+@font-face {
+  font-family: Arkhip;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Arkhip'),
+    url('/fonts/arkhip/400.woff2') format('woff2'),
+    url('/fonts/arkhip/400.woff') format('woff');
+  font-display: swap;
+}

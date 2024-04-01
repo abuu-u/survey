@@ -1,0 +1,96 @@
+.calc {
+  display: flex;
+
+  row-gap: 20px;
+
+  justify-content: space-between;
+
+  @include tablet-only {
+    flex-direction: column;
+  }
+
+  @include mobile-only {
+    flex-direction: column;
+  }
+
+  &__left {
+    display: grid;
+
+    flex: 1 0;
+
+    gap: 78px;
+
+    align-items: start;
+
+    max-width: 530px;
+
+    @include mobile-only {
+      gap: 24px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+
+    gap: 32px;
+
+    align-items: center;
+  }
+
+  &__item {
+    width: 48px;
+    margin-top: 28px;
+
+    @include mobile-only {
+      width: auto;
+      height: 24px;
+      margin-top: 0;
+      margin-left: 28px;
+    }
+
+    &::after {
+      position: absolute;
+      top: -28px;
+
+      width: 2px;
+      height: 20px;
+
+      content: '';
+
+      background: url('../../images/bg-pattern.jpg');
+
+      @include mobile-only {
+        top: unset;
+        left: -28px;
+
+        width: 20px;
+        height: 2px;
+      }
+    }
+  }
+
+  &__input {
+    width: 86px;
+    padding: 9px 23px;
+
+    font-size: 16px;
+    line-height: 19px;
+
+    background: 0;
+    border: 2.5px solid;
+
+    border-image: url('../../images/bg-pattern.jpg') 2.5 repeat;
+  }
+
+  &__radio-wrapper {
+    display: grid;
+
+    flex: 1 0;
+
+    gap: 16px;
+
+    align-content: start;
+
+    max-width: 200px;
+  }
+}

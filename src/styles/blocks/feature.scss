@@ -1,0 +1,15 @@
+.feature {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px 127px;
+
+  @include tablet-only {
+    gap: 10px 50px;
+  }
+
+  @include mobile-only {
+    gap: 10px 20px;
+  }
+}

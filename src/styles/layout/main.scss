@@ -1,0 +1,21 @@
+.main {
+  background-color: $bg;
+  background-clip: content-box;
+
+  &__header {
+    margin-bottom: 50px;
+
+    font-family: Arkhip, sans-serif;
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: center;
+
+    @include tablet-only {
+      font-size: 36px;
+    }
+
+    @include mobile-only {
+      font-size: 24px;
+    }
+  }
+}

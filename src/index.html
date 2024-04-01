@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анкета</title>
+  <link rel="preload" href="fonts/arkhip/400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/arkhip/400.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/gilroy/300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/gilroy/400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/gilroy/500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/gilroy/600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/gilroy/300.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/gilroy/400.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/gilroy/500.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/gilroy/600.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <main class="container main">
+    <div class="bg-circles">
+      <span class="bg-circles__item"></span>
+      <span class="bg-circles__item"></span>
+      <span class="bg-circles__item"></span>
+      <span class="bg-circles__item"></span>
+      <span class="bg-circles__item"></span>
+    </div>
+
+    <div class="content">
+      <div class="logo">
+        <span class="logo__brand">ONEWEB</span>
+
+        <span class="logo__description">Разработка сайтов</span>
+      </div>
+
+      <h1 class="main__header">Анкета</h1>
+
+      <form class="form">
+        <fieldset class="personal">
+          <label class="personal__label form__label">
+            Полное ФИО
+            <input class="personal__input form__input" id="name" type="text"
+              value="Шайхисломов Абдурахмон Рафаилович" />
+          </label>
+
+          <label class="personal__label form__label">
+            Дата рождения
+            <input class="personal__input form__input" id="birthdate" type="text" value="2.01.2000" />
+          </label>
+
+          <label class="personal__label form__label">
+            Место жительства
+            <input class="personal__input form__input" id="address" type="text" value="г. Ташкент, Узбекистан" />
+          </label>
+
+          <label class="personal__label form__label">
+            Телефон / Телеграм
+            <input class="personal__input form__input" id="tel" type="tel" value="+998 93 646-25-04" />
+          </label>
+
+          <label class="personal__label form__label">
+            Почта
+            <input class="personal__input form__input" id="email" type="email"
+              value="shayxislomovabdurahmon@gmail.com" />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend class="form__legend">Расскажите о себе чекбоксами</legend>
+
+          <p class="form__text">
+            Отметьте чекбоксами пункты, которые соответствуют вашим скиллам (пункт/пункт/пункт -
+            пункты, в которых несколько
+            технологий, оставьте только те, которыми владеете)
+          </p>
+
+          <div class="about">
+            <label class="form__checkbox">
+              <input checked id="semantic" type="checkbox">
+              Верстаю семантично
+            </label>
+
+            <label class="form__checkbox">
+              <input checked id="git" type="checkbox">
+              Я умею пользоваться Git
+            </label>
+
+            <label class="form__checkbox">
+              <input checked id="css-methodology" type="checkbox">
+              БЭМ/OOCSS
+            </label>
+
+            <label class="form__checkbox">
+              <input id="wordpress-integration" type="checkbox">
+              Я знаю и умею натягивать верстку на Wordpress
+            </label>
+
+            <label class="form__checkbox">
+              <input checked id="css-preprocessor" type="checkbox">
+              Stylus/LESS/<span class="form__underline">SASS</span> (подчекнуть то,чем пользуюсь)
+            </label>
+
+
+            <label class="form__checkbox">
+              <input id="wordpress-acf" type="checkbox">
+              Я знаю и уверенно применяю ACF в Wordpress
+            </label>
+
+            <label class="form__checkbox">
+              <input id="php-basics" type="checkbox">
+              Я знаю основы PHP и могу немного править код
+            </label>
+
+            <label class="form__checkbox">
+              <input checked id="pixel-perfect" type="checkbox">
+              Верстаю Pixel perfect
+            </label>
+
+            <label class="form__checkbox">
+              <input id="opencart" type="checkbox">
+              Я знаю OpenCart
+            </label>
+
+            <label class="form__checkbox">
+              <input checked id="attentive" type="checkbox">
+              Я внимателен к деталям и перед отправкой на проверку проверяю внимательно сделанную мной задачу сам
+            </label>
+
+            <label class="form__checkbox">
+              <input checked id="online" type="checkbox">
+              Всегда в сети онлайн
+            </label>
+
+            <label class="form__checkbox">
+              <input checked id="punctual" type="checkbox">
+              Я пунктуален и могу работать в сжатые сроки
+            </label>
+
+            <label class="form__checkbox">
+              <input id="jquery" type="checkbox">
+              Я хорошо знаю jQuery
+            </label>
+
+            <label class="form__checkbox">
+              <input checked id="flexible" type="checkbox">
+              Я могу быстро переключаться между задачами
+            </label>
+
+            <label class="form__checkbox">
+              <input checked id="ajax" type="checkbox">
+              Я хорошо знаю Ajax
+            </label>
+
+            <label class="form__checkbox">
+              <input id="lazy" type="checkbox">
+              Я ленивый(-ая)
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="form__legend">Уровень владения jQuery Задание №1</legend>
+
+          <p class="form__text">
+            Ползунок должен двигаться и при смене позиции активная иконка выделяться цветом
+          </p>
+
+          <div class="slider level">
+            <div class="slider__track level__track">
+              <span class="visually-hidden">Ползунок</span>
+            </div>
+
+            <div class="slider__item level__item">Не владею</div>
+            <div class="slider__item level__item">Использую готовые решения</div>
+            <div class="slider__item level__item">Использую готовые решения и умею их переделывать</div>
+            <div class="slider__item level__item" data-current>Пишу сложный JS с нуля</div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="form__legend">Уровень владения jQuery Задание №2</legend>
+
+          <p class="form__text">
+            Строительный калькулятор. В зависимости от выбранных параметров должен сразу считать стоимость по формуле,
+            указанной в
+            Техническом задании.
+          </p>
+
+          <div class="calc">
+            <div class="calc__left">
+              <div class="calc__wrapper">
+                <div class="slider calc__slider">
+                  <div class="slider__track calc__track">
+                    <span class="visually-hidden">Ползунок</span>
+                  </div>
+
+                  <div class="slider__item calc__item" data-current>30м</div>
+                  <div class="slider__item calc__item">40м</div>
+                  <div class="slider__item calc__item">50м</div>
+                  <div class="slider__item calc__item">60м</div>
+                  <div class="slider__item calc__item">70м</div>
+                  <div class="slider__item calc__item">80м</div>
+                  <div class="slider__item calc__item">90м</div>
+                  <div class="slider__item calc__item">100м</div>
+                </div>
+
+                <input class="calc__input" name="area" type="text" value="30м">
+              </div>
+
+              <p class="form__label">
+                Стоимость:
+                <span class="form__input calc__price">100 000 руб.</span>
+              </p>
+            </div>
+
+            <div class="calc__radio-wrapper">
+              <p class="form__radio-label">Тип ремонта:</p>
+
+              <label class="form__radio-label form__title">
+                <input class="form__radio calc__radio" id="new" name="condition" value="new" type="radio" checked />
+                Новостройка
+              </label>
+
+              <label class="form__radio-label form__title">
+                <input class="form__radio calc__radio" id="secondary" name="condition" value="secondary" type="radio" />
+                Вторичное жилье
+              </label>
+
+              <label class="form__radio-label form__title">
+                <input class="form__radio calc__radio" id="private" name="condition" value="private" type="radio" />
+                Частный дом
+              </label>
+            </div>
+
+            <div class="calc__radio-wrapper">
+              <p class="form__radio-label">Тарифы:</p>
+
+              <label class="form__radio-label form__title">
+                <input class="form__radio calc__radio" id="partial" name="rate" value="partial" type="radio" checked />
+                Частичный
+              </label>
+
+              <label class="form__radio-label form__title">
+                <input class="form__radio calc__radio" id="cosmetic" name="rate" value="cosmetic" type="radio" />
+                Косметический
+              </label>
+
+              <label class="form__radio-label form__title">
+                <input class="form__radio calc__radio" id="full" name="rate" value="full" type="radio" />
+                Под ключ
+              </label>
+
+              <label class="form__radio-label form__title">
+                <input class="form__radio calc__radio" id="capital" name="rate" value="capital" type="radio" />
+                Капитальный
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="form__legend">Расскажите о себе словами</legend>
+
+          <p class="form__text">
+            Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в ONE WEB.
+            Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+          </p>
+
+          <div class="expandable-textarea form__input">
+            <textarea name="description"
+              rows="1">Мой опыт работы в области веб-разработки составляет более года. За это время успешно реализовал высокопроизводительные, адаптивные и мультиязычные  веб сайты используя Next.js SCSS/TailwindCSS. Настраивал GitHub Actions для автоматического сбора и деплоя на хостинговые сервисы.</textarea>
+            <div class="expandable-textarea__lines" aria-hidden="true"></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="form__legend">Какие у вас планы на будущее?</legend>
+
+          <p class="form__text">
+            Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+          </p>
+
+          <div class="feature">
+            <label class="form__radio-label form__title">
+              <input class="form__radio" id="new" name="feature" value="html" type="radio" />
+              Верстать
+            </label>
+
+            <label class="form__radio-label form__title">
+              <input class="form__radio" id="secondary" name="feature" value="js" type="radio" checked />
+              Прокачиваться в JS
+            </label>
+
+            <label class="form__radio-label form__title">
+              <input class="form__radio" id="private" name="feature" value="manager" type="radio" />
+              Менеджерство
+            </label>
+
+            <label class="form__radio-label form__title">
+              <input class="form__radio" id="private" name="feature" value="other" type="radio" />
+              Другое
+            </label>
+          </div>
+        </fieldset>
+
+        <label class="form__label">
+          Мой опыт работы::
+          <input class="form__input" size="12" name="experience" value="1год, 6 месяцев" />
+        </label>
+
+        <label class="form__label">
+          Кол-во часов потраченных на тестовое задание::
+          <input class="form__input" size="6" name="hours" value="8 часов" />
+        </label>
+
+        <label class="form__label">
+          Дата заполнения:
+          <input class="form__input" size="9" name="fill-date" value="01.04.2024" />
+        </label>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

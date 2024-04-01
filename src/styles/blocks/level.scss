@@ -1,0 +1,71 @@
+.level {
+  margin-top: 55px;
+
+  @include mobile-only {
+    margin-top: 0;
+    margin-left: 55px;
+  }
+
+  &__item {
+    max-width: 146.5px;
+    margin-top: 20px;
+
+    @include mobile-only {
+      height: 60px;
+      margin-top: 0;
+      margin-left: 20px;
+    }
+
+    &::after {
+      position: absolute;
+      top: -20px;
+
+      width: 2px;
+      height: 12px;
+
+      content: '';
+
+      background: url('../../images/bg-pattern.jpg');
+
+      @include mobile-only {
+        top: unset;
+        left: -20px;
+
+        width: 12px;
+        height: 2px;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: -116px;
+
+      width: 45px;
+      height: 45px;
+
+      content: '';
+
+      background-size: contain;
+
+      @include mobile-only {
+        top: unset;
+        left: -100px;
+
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i + 1})::before {
+        background-image: url('../../images/level-#{$i}-off.png');
+      }
+    }
+
+    @for $i from 1 through 4 {
+      &[data-current]:nth-child(#{$i + 1})::before {
+        background-image: url('../../images/level-#{$i}-on.png');
+      }
+    }
+  }
+}

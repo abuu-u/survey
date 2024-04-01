@@ -1,0 +1,59 @@
+.bg-circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &__item {
+    position: absolute;
+
+    aspect-ratio: 1/1;
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      width: 98%;
+
+      background: radial-gradient(#c89077 0%, transparent 50%, transparent);
+    }
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      width: 104%;
+
+      background: radial-gradient(#ece2df 0%, transparent 50%, transparent);
+    }
+
+    &:nth-child(1) {
+      top: -10vw;
+      left: -15%;
+    }
+
+    &:nth-child(2) {
+      top: 8vw;
+      right: -11%;
+    }
+
+    &:nth-child(3) {
+      top: 36vw;
+      right: -13%;
+    }
+
+    &:nth-child(4) {
+      top: 39vw;
+      left: -14%;
+    }
+
+    &:nth-child(5) {
+      top: 98vw;
+      left: 24%;
+
+      width: 103%;
+
+      background: radial-gradient(#eadfdf 0%, transparent 50%, transparent);
+    }
+  }
+}

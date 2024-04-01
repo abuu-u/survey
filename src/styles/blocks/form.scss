@@ -1,0 +1,214 @@
+.form {
+  display: grid;
+
+  gap: 74px;
+
+  justify-items: start;
+
+  @include tablet-only {
+    gap: 32px;
+  }
+
+  @include mobile-only {
+    gap: 24px;
+  }
+
+  fieldset {
+    display: grid;
+
+    width: 100%;
+  }
+
+  &__legend {
+    margin-bottom: 16px;
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    @include tablet-only {
+      font-size: 18px;
+    }
+
+    @include mobile-only {
+      font-size: 16px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 24px;
+  }
+
+  &__label {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 16px;
+
+    align-items: center;
+
+    font-size: 22px;
+
+    font-weight: 600;
+    line-height: 1.2;
+
+    @include tablet-only {
+      font-size: 16px;
+    }
+
+    @include mobile-only {
+      font-size: 14px;
+    }
+  }
+
+  &__input {
+    padding: 0 16px;
+
+    font-family: Gilroy, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.2;
+
+    background: 0;
+
+    border: 0;
+
+    border-bottom: 2px solid;
+
+    border-image: url('../../images/bg-pattern.jpg') 2 repeat;
+    outline: 0;
+
+    @include tablet-only {
+      font-size: 18px;
+    }
+
+    @include mobile-only {
+      font-size: 16px;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+
+    align-items: center;
+
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    user-select: none;
+
+    @include tablet-only {
+      font-size: 16px;
+    }
+
+    @include mobile-only {
+      font-size: 14px;
+    }
+
+    input {
+      flex-shrink: 0;
+
+      appearance: none;
+    }
+
+    input::before {
+      display: block;
+
+      content: '';
+    }
+
+    input:checked::before {
+      width: 27px;
+      height: 36px;
+      margin-right: 7px;
+
+      background: url('../../images/checkbox-on.png') no-repeat;
+    }
+
+    input:not(:checked)::before {
+      width: 24px;
+      height: 36px;
+      margin-right: 10px;
+
+      background: url('../../images/checkbox-off.png') no-repeat center;
+    }
+  }
+
+  &__underline {
+    border-bottom: 2px solid $primary;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    @include tablet-only {
+      font-size: 16px;
+    }
+
+    @include mobile-only {
+      font-size: 14px;
+    }
+  }
+
+  &__radio-label {
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+
+    user-select: none;
+  }
+
+  &__radio {
+    position: relative;
+
+    flex-shrink: 0;
+
+    width: 23px;
+    height: 23px;
+    padding: 2px;
+
+    appearance: none;
+
+    background: url('../../images/bg-pattern.jpg');
+    background-clip: border-box;
+
+    border-radius: 50%;
+  }
+
+  &__radio::before {
+    z-index: 1;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background-color: $bg;
+    border-radius: 50%;
+  }
+
+  &__radio:checked::after {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    display: block;
+
+    width: 13px;
+    height: 13px;
+
+    content: '';
+
+    background: url('../../images/bg-pattern.jpg');
+    background-clip: content-box;
+    border-radius: 50%;
+  }
+}
